@@ -9,9 +9,11 @@ const Accordion = ({ items }) => {
     setElem(items);
   }, [items]);
 
+  const getItems = elem.map ((item, idx) => <AccordionItem key={idx.toString()} item={item} idx={idx}/>);
+
   return (
     <div className="accordion" id="accordionId">
-        {elem.map ((item, idx) => <AccordionItem key={idx.toString()} item={item} idx={idx}/>)}
+        {getItems}
     </div>
   );
 };
