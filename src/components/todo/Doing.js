@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Todo = ({onClick, title, idx}) => {
+const Doing = ({onClickDone, title, idx}) => {
 
     const send = (event) => {
-        onClick(event.target.nodeName === 'H5' ? event.target.parentElement : event.target);
+        onClickDone(event.target.nodeName === 'H5' ? event.target.parentElement : event.target);
     }
 
   return (
@@ -14,12 +14,12 @@ const Todo = ({onClick, title, idx}) => {
   )
 };
 
-Todo.defaultProps = {
-  title: 'TODO vacío'
+Doing.defaultProps = {
+  title: 'Doing vacío'
 }
 
-Todo.propTypes = {
+Doing.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default Todo;
+export default Doing;
