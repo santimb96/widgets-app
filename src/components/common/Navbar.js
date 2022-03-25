@@ -32,8 +32,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/lenguaje" className="nav-link text-light" >
-                Lenguaje
+              <Link to="/todos" className="nav-link text-light" >
+              TODOS
               </Link>
             </li>
             <li className="nav-item dropdown">

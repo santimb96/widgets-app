@@ -1,23 +1,15 @@
 import React from "react";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
-import Home from "./pages/Home";
-import Wikipedia from "./pages/Wikipedia";
-import { Route, Router, Switch } from "wouter";
+import { Router } from "wouter";
+import Routes from "./components/common/Routes";
 
 const App = () => {
   return (
     <div className="App">
       <Router>
         <Header />
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/wikipedia">
-            <Wikipedia />
-          </Route>
-        </Switch>
+        <Routes />
         <Footer />
       </Router>
     </div>

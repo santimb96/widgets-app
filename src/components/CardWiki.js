@@ -26,12 +26,12 @@ const CardWiki = ({ title, content, pageid }) => {
 
           <div className="d-flex justify-content-center mt-5">
             <button
-              className="btn btn-info"
+              className="btn btn-info w-100"
               onClick={() =>
                 (window.location.href = `https://es.wikipedia.org?curid=${pageid}`)
               }
             >
-              Página Wikipedia
+              {title} Wiki
             </button>
           </div>
         </div>
