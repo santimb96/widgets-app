@@ -1,18 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 
+const Dropdown = ({ options, selected, selectedLang }) => {
+    
+  const sel = (dropLang) => {
+    selectedLang(dropLang.target.outerText);
+  };
 
-
-  const Dropdown = ({ options, selected, selectedLang }) => {
-
-    const sel = (dropLang) => {
-        selectedLang(dropLang.target.outerText);
-      }; 
-
-    const render = options?.map((lang) => (
-      <li className="dropdown-item" onClick={sel} >
-          {lang.label}
-      </li>
-    ));
+  const render = options?.map((lang) => (
+    <li key={lang.value} className="dropdown-item" onClick={sel}>
+      {lang.label}
+    </li>
+  ));
 
   return (
     <div className="dropdown m-5">
@@ -31,5 +30,11 @@ import React from "react";
     </div>
   );
 };
+
+Dropdown.propTypes = {
+    options: PropTypes.array.isRequired,
+    selected: PropTypes.object.isRequired,
+    selectedLang: PropTypes.func.isRequired
+}
 
 export default Dropdown;

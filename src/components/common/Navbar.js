@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-dark p-3">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand text-light" >
-          Widget-app
+          Widget-app (Translator)
         </Link>
         <button
           className="navbar-toggler"
@@ -37,8 +37,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/lang" className="nav-link text-light" >
-              Translator
+              <Link to="/home" className="nav-link text-light" >
+              Home
               </Link>
             </li>
             <li className="nav-item dropdown">

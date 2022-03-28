@@ -9,7 +9,7 @@ const Routes = () => {
   return (
     <Switch>
       <Route path="/">
-        <Home />
+        <Lang />
       </Route>
       <Route path="/wikipedia">
         <Wikipedia />
@@ -17,8 +17,8 @@ const Routes = () => {
       <Route path="/todos">
         <TodoList />
       </Route>
-      <Route path="/lang">
-        <Lang />
+      <Route path="/home">
+        <Home />
       </Route>
     </Switch>
   );
