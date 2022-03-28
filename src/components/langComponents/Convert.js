@@ -18,6 +18,11 @@ const Convert = ({lang, text}) => {
     )
 }
 
+Convert.defaultProps = {
+    lang: {label: 'Spanish', value: 'es'},
+    text: 'Hola mundo!'
+}
+
 Convert.propTypes = {
     lang: PropTypes.object.isRequired,
     text: PropTypes.string.isRequired

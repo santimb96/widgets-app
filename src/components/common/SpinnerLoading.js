@@ -17,7 +17,7 @@ const SpinnerLoading = ({ msg }) => {
 };
 
 SpinnerLoading.defaultProps = {
-  msg: "Loading...",
+  msg: "",
 };
 
 SpinnerLoading.propTypes = {
