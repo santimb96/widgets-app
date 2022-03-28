@@ -36,6 +36,11 @@ const Navbar = () => {
               TODOS
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/lang" className="nav-link text-light" >
+              Translator
+              </Link>
+            </li>
             <li className="nav-item dropdown">
             </li>
           </ul>
